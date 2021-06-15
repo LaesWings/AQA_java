@@ -1,2 +1,2 @@
-Program.java
- Program
+ru/stqa/pft/sandbox/Program.java
+ ru.stqa.pft.sandbox.Program
