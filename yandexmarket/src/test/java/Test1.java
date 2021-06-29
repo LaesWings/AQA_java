@@ -1,4 +1,5 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -8,11 +9,11 @@ import java.util.concurrent.TimeUnit;
 
 public class Test1 {
     //System.setProperty("webdriver.chrome.driver", "Z:chromedriver.exe");
-    FirefoxDriver driver;
+    ChromeDriver driver;
 
     @BeforeMethod
     public void setTest() {
-        this.driver = new FirefoxDriver();
+        this.driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
